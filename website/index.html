@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#6E1616">
+<title>PD Dahlia — Supplier Daging Sapi Segar Bandung | Pesan via WhatsApp</title>
+<meta name="description" content="Supplier gajih cilok, tulang rangu, iga sapi, dan kikil untuk warung bakso, pedagang cilok, catering, dan rumah tangga di Bandung, Cimahi, Bandung Barat. Harga per kg jelas, pesan via WhatsApp.">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --maroon:#6E1616;
+  --red:#C0392B;
+  --red-dark:#8E2A20;
+  --gold:#E3A93B;
+  --cream:#FFF7EE;
+  --ink:#1E1A19;
+  --muted:#736A66;
+  --line:#EFE3D6;
+  --wa1:#25D366;
+  --wa2:#128C4B;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(110,22,22,.08);
+}
+
+/* ============ BASE ============ */
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background:var(--cream);color:var(--ink);font-size:16px;line-height:1.6;
+  padding-bottom:88px; /* ruang untuk sticky CTA mobile */
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+ul{list-style:none}
+section[id]{scroll-margin-top:72px}
+.wrap{width:100%;max-width:1080px;margin:0 auto;padding:0 18px}
+
+/* ============ TOPBAR ============ */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,247,238,.94);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar-in{display:flex;align-items:center;justify-content:space-between;gap:12px;height:62px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-mark{
+  width:36px;height:36px;border-radius:11px;display:grid;place-items:center;font-size:17px;
+  background:linear-gradient(135deg,var(--red),var(--maroon));color:#fff;flex:0 0 auto;
+}
+.brand strong{display:block;font-size:15px;letter-spacing:.06em;font-weight:800;line-height:1.1}
+.brand small{display:block;font-size:10.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.topbar .btn{padding:11px 16px;font-size:.86rem;width:auto;border-radius:12px}
+
+/* ============ BUTTONS ============ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  font-weight:800;font-size:1rem;line-height:1;
+  padding:17px 22px;border-radius:14px;border:1px solid transparent;
+  cursor:pointer;width:100%;text-align:center;transition:transform .15s ease, box-shadow .15s ease;
+}
+.btn:active{transform:translateY(1px)}
+.btn-wa{
+  background:linear-gradient(135deg,var(--wa1),var(--wa2));
+  color:#fff;box-shadow:0 10px 24px rgba(18,140,75,.28);
+}
+.btn-ghost{background:#fff;color:var(--maroon);border-color:#E8D6C4}
+.btn-dark{background:var(--maroon);color:#fff;box-shadow:0 10px 24px rgba(110,22,22,.25)}
+@media(min-width:560px){.btn{width:auto}}
+
+/* ============ HERO ============ */
+.hero{
+  padding:30px 0 36px;
+  background:
+    radial-gradient(120% 85% at 50% 0%, #FFEEDC 0%, rgba(255,247,238,0) 65%),
+    var(--cream);
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);
+  color:var(--red-dark);font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  padding:8px 13px;border-radius:999px;
+}
+h1{
+  font-size:clamp(1.72rem,7.6vw,2.9rem);line-height:1.12;letter-spacing:-.02em;
+  font-weight:800;margin:15px 0 13px;max-width:16ch;
+}
+h1 em{font-style:normal;color:var(--red);background:linear-gradient(180deg,transparent 63%,#FFDDAF 63%)}
+.lead{color:#4A423F;font-size:1rem;max-width:58ch}
+.lead b{color:var(--ink)}
+
+.trust{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 22px}
+.trust li{
+  font-size:.82rem;font-weight:700;background:#fff;border:1px solid var(--line);
+  padding:8px 13px;border-radius:999px;color:#3D3532;
+  display:flex;align-items:center;gap:6px;
+}
+
+.cta-row{display:flex;flex-direction:column;gap:10px}
+@media(min-width:560px){.cta-row{flex-direction:row;flex-wrap:wrap}}
+.micro{font-size:.8rem;color:var(--muted);margin-top:13px;display:flex;align-items:flex-start;gap:7px}
+
+/* ============ SECTIONS ============ */
+.sec{padding:40px 0}
+.sec--white{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.kicker{font-size:11.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:9px}
+h2{font-size:clamp(1.32rem,5.6vw,2rem);line-height:1.2;letter-spacing:-.02em;font-weight:800;max-width:20ch}
+.sec-sub{color:var(--muted);margin-top:10px;max-width:62ch;font-size:.96rem}
+
+/* ============ PROBLEM ============ */
+.pain{margin-top:22px;display:grid;gap:10px}
+.pain li{
+  display:flex;gap:11px;align-items:flex-start;background:#fff;border:1px solid var(--line);
+  border-radius:14px;padding:14px 16px;font-size:.94rem;color:#3D3532;
+}
+.pain .x{color:#C0392B;font-weight:800;flex:0 0 auto}
+.resolve{
+  margin-top:18px;padding:16px 18px;border-radius:14px;
+  background:linear-gradient(135deg,#FFF1DE,#FFE7CC);border:1px solid #F3D8B4;
+  font-size:.95rem;font-weight:600;color:#5A3A1E;
+}
+
+/* ============ PRODUK ============ */
+.grid-produk{display:grid;grid-template-columns:1fr;gap:14px;margin-top:24px}
+@media(min-width:560px){.grid-produk{grid-template-columns:1fr 1fr}}
+@media(min-width:1000px){.grid-produk{grid-template-columns:repeat(4,1fr)}}
+
+.kartu{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:18px;
+  display:flex;flex-direction:column;box-shadow:var(--shadow);position:relative;
+}
+.kartu-emoji{font-size:32px;line-height:1}
+.kartu h3{font-size:1.1rem;font-weight:800;margin:11px 0 6px;letter-spacing:-.01em}
+.kartu p{font-size:.92rem;color:#4A423F}
+.chips-mini{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.chips-mini span{
+  font-size:.72rem;font-weight:800;background:#FDF1E4;color:var(--red-dark);
+  padding:4px 9px;border-radius:999px;
+}
+.harga{margin-top:auto;padding-top:15px;font-weight:800;font-size:1.06rem;color:var(--maroon)}
+.harga small{display:block;font-size:.71rem;font-weight:700;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
+.kartu .btn{margin-top:13px;font-size:.9rem;padding:14px 16px;border-radius:12px}
+
+.banner-extra{
+  margin-top:14px;background:#FFF1DE;border:1px dashed #E5C79B;border-radius:14px;
+  padding:15px 18px;font-size:.9rem;color:#6B4423;
+}
+.banner-extra b{color:#4A2C11}
+
+/* ============ STOK ============ */
+.stok{
+  margin-top:22px;border-radius:22px;padding:22px 20px;color:#fff;
+  background:linear-gradient(160deg,#331914 0%,#5A231B 100%);
+  box-shadow:0 18px 40px rgba(51,25,20,.25);
+}
+.stok-head{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+.stok-head h3{font-size:1.08rem;font-weight:800;letter-spacing:.02em}
+.stok-tgl{font-size:.74rem;font-weight:700;color:#FFD9A8;letter-spacing:.04em}
+.stok-list li{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:12px 0;border-bottom:1px dashed rgba(255,255,255,.16);font-size:.95rem;
+}
+.stok-list li:last-child{border-bottom:0}
+.ada{font-size:.78rem;font-weight:800;color:#8FE3B0;white-space:nowrap}
+.stok-note{font-size:.82rem;color:rgba(255,255,255,.72);margin-top:14px;line-height:1.55}
+
+/* ============ CARA PESAN ============ */
+.steps{margin-top:24px;display:grid;gap:12px}
+@media(min-width:760px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{
+  background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;position:relative;
+}
+.step-num{
+  width:30px;height:30px;border-radius:9px;display:grid;place-items:center;
+  background:var(--maroon);color:#fff;font-weight:800;font-size:.88rem;margin-bottom:11px;
+}
+.step h4{font-size:.98rem;font-weight:800;margin-bottom:5px}
+.step p{font-size:.88rem;color:#4A423F}
+
+/* ============ KEUNGGULAN ============ */
+.grid-unggul{margin-top:24px;display:grid;grid-template-columns:1fr;gap:12px}
+@media(min-width:600px){.grid-unggul{grid-template-columns:1fr 1fr}}
+@media(min-width:960px){.grid-unggul{grid-template-columns:repeat(3,1fr)}}
+.unggul{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}
+.unggul .ic{font-size:20px;margin-bottom:8px;display:block}
+.unggul h4{font-size:.95rem;font-weight:800;margin-bottom:4px}
+.unggul p{font-size:.86rem;color:var(--muted)}
+
+/* ============ TESTIMONI ============ */
+.grid-testi{margin-top:24px;display:grid;gap:12px}
+@media(min-width:700px){.grid-testi{grid-template-columns:repeat(3,1fr)}}
+.testi{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.stars{color:var(--gold);letter-spacing:2px;font-size:.85rem;margin-bottom:9px}
+.testi q{display:block;font-size:.94rem;color:#3D3532;font-style:italic}
+.testi .who{margin-top:12px;font-size:.8rem;font-weight:800;color:var(--maroon)}
+.testi .who span{display:block;font-weight:600;color:var(--muted);font-size:.76rem}
+
+/* ============ AREA ============ */
+.area-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.area-chips li{
+  background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 15px;
+  font-size:.86rem;font-weight:700;color:#3D3532;
+}
+.area-note{margin-top:16px;font-size:.9rem;color:var(--muted)}
+
+/* ============ FAQ ============ */
+.faq{margin-top:22px}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:10px;overflow:hidden}
+.faq summary{
+  cursor:pointer;padding:16px 18px;font-weight:800;font-size:.94rem;
+  list-style:none;display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.3rem;font-weight:800;color:var(--red);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq p{padding:0 18px 16px;font-size:.9rem;color:#4A423F}
+
+/* ============ FINAL CTA ============ */
+.final{
+  border-radius:24px;padding:32px 22px;text-align:center;color:#fff;
+  background:linear-gradient(150deg,var(--maroon),#3E1410);
+  box-shadow:0 20px 46px rgba(110,22,22,.28);
+}
+.final h2{color:#fff;margin:0 auto;max-width:18ch}
+.final p{color:rgba(255,255,255,.82);margin:12px auto 0;max-width:48ch;font-size:.95rem}
+.final .btn{margin-top:22px}
+@media(min-width:560px){.final .btn{margin-top:24px}}
+
+/* ============ FOOTER ============ */
+footer{background:#2A1512;color:#fff;padding:38px 0 30px;margin-top:0}
+.foot-grid{display:grid;gap:24px}
+@media(min-width:700px){.foot-grid{grid-template-columns:1.4fr 1fr 1fr}}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.foot h4{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:#E3A93B;margin-bottom:10px;font-weight:800}
+.foot p, .foot li{font-size:.88rem;color:rgba(255,255,255,.72);line-height:1.7}
+.foot a:hover{color:#fff}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:28px;padding-top:18px;font-size:.78rem;color:rgba(255,255,255,.5);text-align:center}
+
+/* ============ STICKY CTA (MOBILE) ============ */
+.bottom-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;
+  display:flex;align-items:center;gap:10px;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.97);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-top:1px solid var(--line);
+  box-shadow:0 -6px 24px rgba(0,0,0,.06);
+}
+.bottom-cta .hint{font-size:.7rem;color:var(--muted);line-height:1.3;flex:0 0 36%;font-weight:600}
+.bottom-cta .btn{flex:1;padding:15px 12px;font-size:.92rem}
+
+/* ============ FLOATING WA (DESKTOP) ============ */
+.float-wa{display:none}
+@media(min-width:860px){
+  body{padding-bottom:0}
+  .bottom-cta{display:none}
+  .float-wa{
+    display:inline-flex;position:fixed;right:24px;bottom:24px;z-index:60;
+    width:60px;height:60px;border-radius:50%;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--wa1),var(--wa2));color:#fff;font-size:26px;
+    box-shadow:0 14px 30px rgba(18,140,75,.4);
+  }
+  .float-wa:hover{transform:translateY(-2px)}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= TOPBAR ================= -->
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#top" aria-label="PD Dahlia">
+      <span class="brand-mark">🥩</span>
+      <span>
+        <strong>PD DAHLIA</strong>
+        <small>Daging Sapi Segar</small>
+      </span>
+    </a>
+    <a class="btn btn-wa" data-wa href="https://wa.me/6281234567890" aria-label="Chat admin via WhatsApp">Chat Admin</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Supplier daging sapi • Bandung</span>
+
+    <h1 data-hero-headline>Daging sapi segar, harga jelas, <em>dikirim hari ini.</em></h1>
+
+    <p class="lead" data-hero-subheadline>PD Dahlia memasok gajih cilok, tulang rangu, iga, dan kikil untuk warung bakso, pedagang cilok, catering, dan rumah tangga di Bandung &amp; sekitarnya. Pesan lewat WhatsApp — dibalas admin dalam hitungan menit, bukan berhari-hari.
+    </p>
+
+    <ul class="trust">
+      <li>✅ Segar setiap pagi</li>
+      <li>✅ Harga per kg transparan</li>
+      <li>✅ Antar Bandung &amp; sekitarnya</li>
+      <li>✅ Bisa langganan rutin</li>
+    </ul>
+
+    <div class="cta-row">
+      <a class="btn btn-wa" data-wa href="https://wa.me/6281234567890">
+        💬 Pesan via WhatsApp
+      </a>
+      <a class="btn btn-ghost" href="#produk">Lihat Produk &amp; Harga</a>
+    </div>
+
+    <p class="micro">🔒 Tanpa daftar akun. Tanpa minimum order. Cukup chat — admin hitung total, barang dikirim.</p>
+  </div>
+</section>
+
+<!-- ================= MASALAH ================= -->
+<section class="sec sec--white">
+  <div class="wrap">
+    <p class="kicker">Kenapa ganti supplier itu melelahkan</p>
+    <h2>Masalahnya bukan cari supplier. Masalahnya cari yang bisa dipegang.</h2>
+    <p class="sec-sub">Kalau Anda pernah kecewa dengan pemasok daging, biasanya karena empat hal ini:</p>
+
+    <ul class="pain">
+      <li><span class="x">✕</span> Barang datang tidak sesuai pesanan — jumlah kurang, potongan beda.</li>
+      <li><span class="x">✕</span> Harga berubah tanpa pemberitahuan, tagihan jadi tidak bisa diprediksi.</li>
+      <li><span class="x">✕</span> Admin lambat balas, padahal besok pagi sudah harus produksi.</li>
+      <li><span class="x">✕</span> Kualitas tidak konsisten — minggu ini bagus, minggu depan tidak.</li>
+    </ul>
+
+    <p class="resolve">
+      PD Dahlia dibangun untuk menghilangkan empat hal itu. Harga dikonfirmasi dulu sebelum kirim,
+      stok dicek real-time lewat WhatsApp, dan pesanan rutin bisa dititip dengan takaran yang sama setiap kali.
+    </p>
+  </div>
+</section>
+
+<!-- ================= PRODUK ================= -->
+<section class="sec" id="produk">
+  <div class="wrap">
+    <p class="kicker">Produk terlaris</p>
+    <h2>Yang paling sering dipesan warung &amp; pedagang</h2>
+    <p class="sec-sub">Harga per kilogram, bukan harga tebak-tebakan. Klik produk untuk tanya stok hari ini.</p>
+
+    <div class="grid-produk" data-produk-grid>
+
+      <article class="kartu">
+        <span class="kartu-emoji">🥩</span>
+        <h3>Gajih Cilok</h3>
+        <p>Gajih bersih, tidak berbau, tekstur padat. Bikin cilok dan bakso lebih gurih tanpa membuat kuah keruh.</p>
+        <div class="chips-mini"><span>Bakso</span><span>Cilok</span><span>Olahan</span></div>
+        <div class="harga"><small>Mulai</small>Rp 25.000 / kg</div>
+        <a class="btn btn-wa" data-wa
+           data-msg="Halo PD Dahlia, saya mau pesan Gajih Cilok. Stok hari ini masih ada? Berapa harga per kg?"
+           href="https://wa.me/6281234567890">Tanya Harga</a>
+      </article>
+
+      <article class="kartu">
+        <span class="kartu-emoji">🦴</span>
+        <h3>Tulang Rangu</h3>
+        <p>Kaya kolagen, kaldu lebih pekat dan tetap bening. Andalan warung yang jualan berkuah.</p>
+        <div class="chips-mini"><span>Sop</span><span>Kaldu</span><span>Warung makan</span></div>
+        <div class="harga"><small>Mulai</small>Rp 28.000 / kg</div>
+        <a class="btn btn-wa" data-wa
+           data-msg="Halo PD Dahlia, saya mau pesan Tulang Rangu. Stok hari ini masih ada? Berapa harga per kg?"
+           href="https://wa.me/6281234567890">Tanya Harga</a>
+      </article>
+
+      <article class="kartu">
+        <span class="kartu-emoji">🍖</span>
+        <h3>Iga Sapi</h3>
+        <p>Potongan rapi, daging menempel tebal, sedikit lemak. Pas untuk sup iga, empal, atau grill.</p>
+        <div class="chips-mini"><span>Sup iga</span><span>Empal</span><span>Grill</span></div>
+        <div class="harga"><small>Mulai</small>Rp 95.000 / kg</div>
+        <a class="btn btn-wa" data-wa
+           data-msg="Halo PD Dahlia, saya mau pesan Iga Sapi. Stok hari ini masih ada? Berapa harga per kg?"
+           href="https://wa.me/6281234567890">Tanya Harga</a>
+      </article>
+
+      <article class="kartu">
+        <span class="kartu-emoji">🥣</span>
+        <h3>Kikil</h3>
+        <p>Sudah direbus, empuk, tidak alot. Siap diolah jadi kikil cabe ijo atau gulai tanpa proses panjang.</p>
+        <div class="chips-mini"><span>Gulai</span><span>Cabe ijo</span><span>Catering</span></div>
+        <div class="harga"><small>Mulai</small>Rp 38.000 / kg</div>
+        <a class="btn btn-wa" data-wa
+           data-msg="Halo PD Dahlia, saya mau pesan Kikil. Stok hari ini masih ada? Berapa harga per kg?"
+           href="https://wa.me/6281234567890">Tanya Harga</a>
+      </article>
+
+    </div>
+
+    <p class="banner-extra">
+      <b>Butuh potongan lain?</b> Daging giling, tetelan, sengkel, jeroan — stok mengikuti pasar pagi.
+      Kirim daftar kebutuhan Anda, admin cek ketersediaannya hari itu juga.
+    </p>
+  </div>
+</section>
+
+<!-- ================= STOK HARI INI ================= -->
+<section class="sec sec--white">
+  <div class="wrap">
+    <p class="kicker">Transparansi</p>
+    <h2>Cek stok hari ini sebelum Anda chat</h2>
+    <p class="sec-sub">Diperbarui setiap pagi pukul 06.00 WIB. Kalau ada yang kosong, admin akan menawarkan alternatif — bukan membiarkan Anda menunggu.</p>
+
+    <div class="stok">
+      <div class="stok-head">
+        <h3>📦 Stok Hari Ini</h3>
+        <span class="stok-tgl">Update: <span data-tanggal>hari ini</span></span>
+      </div>
+      <ul class="stok-list" data-stok-list>
+        <li><span>Gajih Cilok</span><span class="ada">✅ Tersedia</span></li>
+        <li><span>Tulang Rangu</span><span class="ada">✅ Tersedia</span></li>
+        <li><span>Kikil</span><span class="ada">✅ Tersedia</span></li>
+        <li><span>Iga Sapi</span><span class="ada">✅ Tersedia</span></li>
+      </ul>
+      <p class="stok-note" data-stok-catatan>
+        Stok bergerak cepat, terutama menjelang akhir pekan. Kalau butuh jumlah banyak,
+        sebaiknya titip pesanan sehari sebelumnya.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CARA PESAN ================= -->
+<section class="sec">
+  <div class="wrap">
+    <p class="kicker">Cara pesan</p>
+    <h2>Dari buka WhatsApp sampai barang datang</h2>
+    <p class="sec-sub">Rata-rata pelanggan baru selesai order dalam waktu kurang dari 2 menit.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h4>Pilih produk</h4>
+        <p>Tentukan produk dan jumlah kilogram yang dibutuhkan.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h4>Kirim WhatsApp</h4>
+        <p>Klik tombol pesan — pesan otomatis sudah terisi, tinggal kirim.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h4>Konfirmasi</h4>
+        <p>Admin cek stok dan mengirim total harga beserta ongkir.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h4>Pengiriman</h4>
+        <p>Barang dikirim sesuai jadwal yang disepakati. Bisa bayar di tempat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= KEUNGGULAN ================= -->
+<section class="sec sec--white">
+  <div class="wrap">
+    <p class="kicker">Keunggulan</p>
+    <h2>Mengapa pedagang memilih PD Dahlia</h2>
+
+    <div class="grid-unggul">
+      <div class="unggul">
+        <span class="ic">🌅</span>
+        <h4>Segar dari pasar pagi</h4>
+        <p>Barang dibeli dan dipotong di hari yang sama, bukan stok lama dari freezer.</p>
+      </div>
+      <div class="unggul">
+        <span class="ic">🏷️</span>
+        <h4>Harga dikonfirmasi dulu</h4>
+        <p>Tidak ada tagihan kejutan. Total harga dan ongkir disepakati sebelum kirim.</p>
+      </div>
+      <div class="unggul">
+        <span class="ic">⚡</span>
+        <h4>Respon cepat</h4>
+        <p>Admin aktif 06.00–17.00 WIB. Chat masuk di luar jam itu dibalas pagi berikutnya.</p>
+      </div>
+      <div class="unggul">
+        <span class="ic">🔁</span>
+        <h4>Bisa titip pesanan rutin</h4>
+        <p>Pesan harian atau mingguan dengan takaran sama, tanpa perlu chat dari awal.</p>
+      </div>
+      <div class="unggul">
+        <span class="ic">📦</span>
+        <h4>Grosir &amp; eceran</h4>
+        <p>Melayani pembelian 1 kg untuk rumah tangga sampai puluhan kg untuk usaha.</p>
+      </div>
+      <div class="unggul">
+        <span class="ic">🔪</span>
+        <h4>Potong sesuai permintaan</h4>
+        <p>Sebutkan ukuran potongan saat memesan, kami sesuaikan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONI ================= -->
+<section class="sec">
+  <div class="wrap">
+    <p class="kicker">Testimoni</p>
+    <h2>Kata pelanggan yang sudah langganan</h2>
+
+    <div class="grid-testi">
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <q>Dagingnya segar, pengiriman cepat. Pesan pagi, siang sudah sampai.</q>
+        <div class="who">Bu Rina <span>Warung Bakso, Cimahi</span></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <q>Sudah langganan untuk usaha bakso. Takarannya konsisten, harga tidak pernah tiba-tiba naik.</q>
+        <div class="who">Pak Dedi <span>Pedagang Bakso, Bandung</span></div>
+      </div>
+      <div class="testi">
+        <div class="stars">★★★★★</div>
+        <q>Adminnya enak diajak komunikasi. Stok kosong pun langsung dikasih alternatif.</q>
+        <div class="who">Ibu Sari <span>Catering Rumahan, Bandung Barat</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AREA PENGIRIMAN ================= -->
+<section class="sec sec--white">
+  <div class="wrap">
+    <p class="kicker">Area pengiriman</p>
+    <h2>Kami antar ke wilayah ini</h2>
+
+    <ul class="area-chips" data-area-list>
+      <li>📍 Bandung</li>
+      <li>📍 Cimahi</li>
+      <li>📍 Kabupaten Bandung</li>
+      <li>📍 Bandung Barat</li>
+      <li>📍 Area lain sesuai kesepakatan</li>
+    </ul>
+
+    <p class="area-note">
+      Di luar daftar di atas? Kirim lokasi Anda lewat WhatsApp — kami cek ongkir dan jadwal kirimnya.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec">
+  <div class="wrap">
+    <p class="kicker">Pertanyaan umum</p>
+    <h2>Sebelum Anda chat</h2>
+
+    <div class="faq">
+      <details open>
+        <summary>Minimal order berapa kilogram?</summary>
+        <p>Tidak ada minimum order untuk area Bandung dan Cimahi. Untuk luar area, admin akan menginformasikan minimum agar ongkir tetap masuk akal.</p>
+      </details>
+      <details>
+        <summary>Bisa dikirim hari ini?</summary>
+        <p>Bisa, selama pesanan dikonfirmasi sebelum pukul 14.00 WIB dan stok tersedia. Pesanan setelah jam itu biasanya dikirim pagi berikutnya.</p>
+      </details>
+      <details>
+        <summary>Bayar di tempat atau transfer?</summary>
+        <p>Dua-duanya bisa. Pembayaran dilakukan setelah total harga dikonfirmasi admin, jadi tidak ada nominal yang mendadak berubah.</p>
+      </details>
+      <details>
+        <summary>Bisa langganan rutin untuk usaha?</summary>
+        <p>Bisa. Banyak pelanggan menitip pesanan harian atau mingguan dengan takaran tetap. Cukup konfirmasi sekali, jadwal berikutnya tinggal diulang.</p>
+      </details>
+      <details>
+        <summary>Dagingnya dari mana?</summary>
+        <p>Dari pemasok sapi lokal yang sudah bekerja sama dengan kami. Barang dibeli pagi dan dipotong di hari yang sama, bukan stok lama.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINAL CTA ================= -->
+<section class="sec">
+  <div class="wrap">
+    <div class="final">
+      <h2>Stok hari ini terbatas. Pesan sebelum habis.</h2>
+      <p>Chat sekarang, tanyakan stok dan harga, lalu putuskan. Tidak ada komitmen apa pun sampai Anda konfirmasi.</p>
+      <a class="btn btn-wa" data-wa
+         data-msg="Halo PD Dahlia, saya mau pesan daging sapi. Boleh info stok dan harga hari ini?"
+         href="https://wa.me/6281234567890">💬 Pesan via WhatsApp Sekarang</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <span class="brand-mark">🥩</span>
+          <strong style="letter-spacing:.06em">PD DAHLIA</strong>
+        </div>
+        <p>Supplier daging sapi segar untuk warung bakso, pedagang cilok, catering, restoran, dan rumah tangga di Bandung &amp; sekitarnya.</p>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <ul>
+          <li>WhatsApp: <a data-wa href="https://wa.me/6281234567890">08xx-xxxx-xxxx</a></li>
+          <li>Alamat: Bandung</li>
+          <li>Jam operasional: 06.00 – 17.00 WIB</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#produk">Produk &amp; Harga</a></li>
+          <li><a href="#top">Cek Stok Hari Ini</a></li>
+          <li><a href="#top">Cara Pesan</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copy">© <span data-year>2025</span> PD Dahlia. Semua harga dapat berubah mengikuti harga pasar dan dikonfirmasi admin sebelum pengiriman.</p>
+  </div>
+</footer>
+
+<!-- ================= STICKY CTA MOBILE ================= -->
+<div class="bottom-cta">
+  <span class="hint">Dibalas admin<br>06.00–17.00 WIB</span>
+  <a class="btn btn-wa" data-wa
+     data-msg="Halo PD Dahlia, saya mau pesan daging sapi. Boleh info stok dan harga hari ini?"
+     href="https://wa.me/6281234567890">💬 Pesan via WhatsApp</a>
+</div>
+
+<!-- ================= FLOATING WA DESKTOP ================= -->
+<a class="float-wa" data-wa aria-label="Chat WhatsApp"
+   data-msg="Halo PD Dahlia, saya mau pesan daging sapi. Boleh info stok dan harga hari ini?"
+   href="https://wa.me/6281234567890">💬</a>
+
+<script>
+/* ============================================================
+   1. GANTI NOMOR WHATSAPP DI SINI (format: 62 + nomor tanpa 0)
+   ============================================================ */
+const WA_NUMBER = "6281234567890";
+
+const DEFAULT_MSG =
+  "Halo PD Dahlia, saya mau pesan daging sapi. Boleh info stok dan harga hari ini?";
+
+function waURL(msg){
+  return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);
+}
+
+/* Pasang link WhatsApp + pesan otomatis ke semua elemen [data-wa] */
+document.querySelectorAll("[data-wa]").forEach(function(el){
+  const msg = el.getAttribute("data-msg") || DEFAULT_MSG;
+  el.setAttribute("href", waURL(msg));
+  el.setAttribute("target", "_blank");
+  el.setAttribute("rel", "noopener");
+});
+
+/* Tanggal update stok otomatis */
+const hariIni = new Date().toLocaleDateString("id-ID", {
+  day: "numeric", month: "long", year: "numeric"
+});
+document.querySelectorAll("[data-tanggal]").forEach(function(el){
+  el.textContent = hariIni;
+});
+
+/* Tahun footer otomatis */
+document.querySelectorAll("[data-year]").forEach(function(el){
+  el.textContent = new Date().getFullYear();
+});
+</script>
+
+<script src="public-integration.js"></script>
+</body>
+</html>
+
+
+
+
